@@ -4,7 +4,6 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/co
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/token/ERC20/SafeERC20.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/access/Ownable.sol";
 
-
 /**
     Ensures that any contract that inherits from this contract is able to
     withdraw funds that are accidentally received or stuck.
