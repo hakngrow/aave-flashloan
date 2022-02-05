@@ -1,0 +1,307 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addressProvider",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_assetAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "LogWithdraw",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "addressesProvider",
+				"outputs": [
+					{
+						"internalType": "contract ILendingPoolAddressesProviderV1",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_reserve",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_fee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_params",
+						"type": "bytes"
+					}
+				],
+				"name": "executeOperation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_asset",
+						"type": "address"
+					}
+				],
+				"name": "flashloan",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_assetAddress",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				},
+				"withdraw(address)": {
+					"details": "Withdraw asset.",
+					"params": {
+						"_assetAddress": "Asset to be withdrawn."
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {
+				"executeOperation(address,uint256,uint256,bytes)": {
+					"notice": "This function is called after your contract has received the flash loaned amount"
+				},
+				"flashloan(address)": {
+					"notice": "Flash loan 1000000000000000000 wei (1 ether) worth of `_asset`"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FlashLoan.sol": "FlashloanV1"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FlashLoan.sol": {
+			"keccak256": "0x8be93d018588155b79e09f592247d7cc77cd4bcc6619fc8ab920eb087547a334",
+			"urls": [
+				"bzz-raw://b25e57e1d45257e6f89167ea0f3089038d71233693b49cba06d54f7a97f14b7f",
+				"dweb:/ipfs/QmXKDasw7ZtmBxSwCgbMbsng3Z7CPrwhp827fBJPp18qng"
+			]
+		},
+		"contracts/FlashLoanReceiverBase.sol": {
+			"keccak256": "0x4e31d8ed6ef83e0eb5250558bf194ab87c675eaa12cf2c4e434e451806f85b2b",
+			"urls": [
+				"bzz-raw://030d3727acff48319445380b879ccc205e65e0691ee446fa0be5457daf30db83",
+				"dweb:/ipfs/Qmb5L1e9j1XHrmsG6XoMfVDhGofvouMnGrbi7PdNJ2Pfgg"
+			]
+		},
+		"contracts/IFlashLoanReceiver.sol": {
+			"keccak256": "0x6a9c90815fc043930c2a2c38fa54a64c34ad448d59b09bf24e3abec396773aaf",
+			"urls": [
+				"bzz-raw://d686cbd20804e6fe4416f369e607587b1578584c62336614ce5bae47b7999b51",
+				"dweb:/ipfs/QmNkwMJywEdKdvLWmXNiLa1qHKDqMWSVvZUtjs1WjiAHTW"
+			]
+		},
+		"contracts/ILendingPool.sol": {
+			"keccak256": "0xc9370ef7a8bcdf6f53410479b945e631e105336330e67baebf0fdcb532cd0f64",
+			"urls": [
+				"bzz-raw://b3b7956f6f0bdf604eea9ff93730285e9f9d0c34ace3796fa8ae7d617833b9fe",
+				"dweb:/ipfs/QmTqdiCJviX8BxJJvqGzEo9DMbS4ZvkrB11J7AVpnwWdvn"
+			]
+		},
+		"contracts/ILendingPoolAddressesProvider.sol": {
+			"keccak256": "0x0a443f45155bd97f98f99f320dd84d9906498f1569202d1690e00b8aba640529",
+			"urls": [
+				"bzz-raw://09b66693b7c581c5aa323283b41d3539161d6656747a664d6105cc506343d986",
+				"dweb:/ipfs/QmZBSJcLXPYdHxiQbsoHscd32CzqJAJVikDynkezE7gf2e"
+			]
+		},
+		"contracts/Withdrawable.sol": {
+			"keccak256": "0x9d3dda3b2432760280c25f340738017cf6adc0c030b631933a09ced54165619c",
+			"urls": [
+				"bzz-raw://8a4247fb68000025c78f678b150da2c6034371c59a7a56e1c0ee944cdf51a93e",
+				"dweb:/ipfs/QmafqEbyFV2xseenV4NzbuUA7PFTPAYv1hLUMko4ompQK5"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/access/Ownable.sol": {
+			"keccak256": "0x15e2d5bd4c28a88548074c54d220e8086f638a71ed07e6b3ba5a70066fcf458d",
+			"urls": [
+				"bzz-raw://90faf5851c02f9bd42c5bfb54d4f0421a2612f50ab80b2c4fa24fa3792071cc2",
+				"dweb:/ipfs/QmRGM4F2PcGVF85aTfaA9YBhCHHDqrMhRjyp6fGeBTtirb"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/math/SafeMath.sol": {
+			"keccak256": "0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52",
+			"urls": [
+				"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c",
+				"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3",
+			"urls": [
+				"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e",
+				"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5",
+			"urls": [
+				"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08",
+				"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/token/ERC20/SafeERC20.sol": {
+			"keccak256": "0xf12dfbe97e6276980b83d2830bb0eb75e0cf4f3e626c2471137f82158ae6a0fc",
+			"urls": [
+				"bzz-raw://b3a849c2d95e85463909e5b5c920b13e7a11216ca14127085e16d22b9379d52a",
+				"dweb:/ipfs/QmUg3CZDbCCcQdroEpexBy5ZFd5vD1UWijWQq9qHZjtJNQ"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/utils/Address.sol": {
+			"keccak256": "0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea",
+			"urls": [
+				"bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c",
+				"dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/utils/Context.sol": {
+			"keccak256": "0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0",
+			"urls": [
+				"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f",
+				"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getLendingPool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLendingPoolCore",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {},
+			"title": "ILendingPoolAddressesProvider interface"
+		},
+		"userdoc": {
+			"methods": {},
+			"notice": "provides the interface to fetch the LendingPoolCore address"
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ILendingPoolAddressesProvider.sol": "ILendingPoolAddressesProviderV1"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ILendingPoolAddressesProvider.sol": {
+			"keccak256": "0x0a443f45155bd97f98f99f320dd84d9906498f1569202d1690e00b8aba640529",
+			"urls": [
+				"bzz-raw://09b66693b7c581c5aa323283b41d3539161d6656747a664d6105cc506343d986",
+				"dweb:/ipfs/QmZBSJcLXPYdHxiQbsoHscd32CzqJAJVikDynkezE7gf2e"
+			]
+		}
+	},
+	"version": 1
+}
