@@ -13,4 +13,6 @@ Flash loans are a new way of borrowing assets on the blockchain. Initially imple
 
 A transaction is atomic whenever the series of its operations are indivisible and irreducible. Or in plain english — either all or none of the transaction occurs. The flash loan leverages atomicity to allow a user to borrow without posting collateral. There are two caveats to mention. First of all, whenever you borrow an asset in a Flash Loan you have to pay a fee of 0.09% of the amount loaned. Secondly, you must pay back the loan in the same transaction in which you borrowed. Flash loans are primarily used for arbitrage between assets.
 
+### 3. Remix Setup
+
 
