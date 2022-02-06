@@ -16,6 +16,7 @@ A transaction is atomic if the series of its operations are indivisible and irre
 ### 3. Remix Setup
 
 For this tutorial, we'll be using [Remix](https://remix.ethereum.org/), the browser based IDE. 
+
 ![Remix IDE](./public/images/remix-ide.jpg)
 
 ### 4. Metamask Setup
