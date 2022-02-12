@@ -24,3 +24,16 @@ For this tutorial, we'll be using [Remix](https://remix.ethereum.org/), the brow
 MetaMask is a browser plugin that serves as an Ethereum wallet. Once installed, it allows users to store Ether and other ERC-20 tokens, enabling them to make transactions to any Ethereum address.
 
 You can install MetaMask [here](https://metamask.io/).
+
+### 5. The Smart Contract
+
+Create the following 6 files in the `contracts` folder in your `default_workspace` of Remix.
+
+1. FlashLoan.sol
+2. FlashLoanReceiverBase.sol
+3. ILendingPoolAddressesProvider.sol
+4. IFlashLoanReceiver.sol
+5. ILendingPool.sol
+6. Withdrawable.sol
+
+![contracts folder](public/images/contracts.jpg)
