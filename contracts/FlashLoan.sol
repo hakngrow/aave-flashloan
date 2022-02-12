@@ -1,7 +1,6 @@
 pragma solidity ^0.6.6;
 
 import "./FlashLoanReceiverBase.sol";
-import "./ILendingPoolAddressesProvider.sol";
 import "./ILendingPool.sol";
 
 contract Flashloan is FlashLoanReceiverBase {
