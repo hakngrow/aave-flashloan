@@ -31,9 +31,11 @@ Create the following 6 files in the `contracts` folder in your `default_workspac
 
 1. FlashLoan.sol
 2. FlashLoanReceiverBase.sol
-3. ILendingPoolAddressesProvider.sol
-4. IFlashLoanReceiver.sol
+3. IFlashLoanReceiver.sol
+4. ILendingPoolAddressesProvider.sol
 5. ILendingPool.sol
 6. Withdrawable.sol
 
 ![contracts folder](public/images/contracts.jpg)
+
+`ILendingPool.sol` and `ILendingPoolAddressesProvider.sol` are [interfaces](https://www.geeksforgeeks.org/solidity-basics-of-interface/) that allow our flash loan contract to interact with the Aave market.
