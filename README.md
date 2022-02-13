@@ -29,12 +29,12 @@ You can install MetaMask [here](https://metamask.io/).
 
 Create the following 6 files in the `contracts` folder in your `default_workspace` of Remix.
 
-1. FlashLoan.sol
-2. FlashLoanReceiverBase.sol
-3. IFlashLoanReceiver.sol
-4. ILendingPoolAddressesProvider.sol
-5. ILendingPool.sol
-6. Withdrawable.sol
+- FlashLoan.sol
+- FlashLoanReceiverBase.sol
+- IFlashLoanReceiver.sol
+- ILendingPoolAddressesProvider.sol
+- ILendingPool.sol
+- Withdrawable.sol
 
 ![contracts folder](public/images/contracts.jpg)
 
@@ -45,3 +45,13 @@ To receive flash loaned amounts, our contract must conform to the `IFlashLoanRec
 `ILendingPool.sol` and `ILendingPoolAddressesProvider.sol` are [interfaces](https://www.geeksforgeeks.org/solidity-basics-of-interface/) that allow our flash loan contract to interact with the Aave market.
 
 Next we break down the code in our flash loan contract `FlashLoan.sol`.
+
+> `pragma solidity ^0.6.6;`
+
+
+First, we define the solidity compiler version (`0.6.6`).
+
+> `import "./FlashLoanReceiverBase.sol";`
+`import "./ILendingPool.sol";`
+
+Next, we import the dependencies for the smart contract.
