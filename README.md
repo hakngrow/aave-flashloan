@@ -46,12 +46,37 @@ To receive flash loaned amounts, our contract must conform to the `IFlashLoanRec
 
 Next we break down the code in our flash loan contract `FlashLoan.sol`.
 
-> `pragma solidity ^0.6.6;`
+`pragma solidity ^0.6.6;`
 
 
 First, we define the solidity compiler version (`0.6.6`).
 
-> `import "./FlashLoanReceiverBase.sol";`
+`import "./FlashLoanReceiverBase.sol";`
 `import "./ILendingPool.sol";`
 
-Next, we import the dependencies for the smart contract.
+Then, we import the dependencies for the smart contract. The flash loan contract is inheriting from the `FlashLoanReceiverBase` abstract contract.
+
+`constructor(address _addressProvider) FlashLoanReceiverBase(_addressProvider) public {}`
+
+To instaniate the flash loan contract, we need to pass it the address of one of the [Lending Pool Addresses Provider](https://docs.aave.com/developers/v/1.0/deployed-contracts/deployed-contract-instances) of Aave.  For this tutorial, V1 contracts from the Kovan testnet.
+
+```
+    function flashloan() public onlyOwner {
+        /**
+        * Flash Loan of 1000 DAI
+        */
+        address receiver = address(this); // Can also be a separate contract
+        address asset = "0x6b175474e89094c44da98b954eedeac495271d0f"; // Dai
+        uint256 amount = 1000 * 1e18;
+        
+        // If no params are needed, use an empty params:
+        bytes memory params = "";
+        // Else encode the params like below (bytes encoded param of type `address` and `uint`)
+        // bytes memory params = abi.encode(address(this), 1234);
+        
+        ILendingPool lendingPool = ILendingPool(addressesProvider.getLendingPool());
+        lendingPool.flashLoan(address(this), asset, amount, params);
+    }
+```
+
+We define a `flashloan()` function
