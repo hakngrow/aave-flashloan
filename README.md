@@ -43,3 +43,5 @@ Our flash loan contract (`FlashLoan.sol`) inherits from the [abstract contract](
 To receive flash loaned amounts, our contract must conform to the `IFlashLoanReceiver.sol` interface by implementing the relevant `executeOperation()` function.
 
 `ILendingPool.sol` and `ILendingPoolAddressesProvider.sol` are [interfaces](https://www.geeksforgeeks.org/solidity-basics-of-interface/) that allow our flash loan contract to interact with the Aave market.
+
+Next we break down the code in our flash loan contract `FlashLoan.sol`.
