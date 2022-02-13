@@ -60,8 +60,9 @@ Then, we import the dependencies for the smart contract. The flash loan contract
 
 To instaniate the flash loan contract, we need to pass it the address of one of the [Lending Pool Addresses Provider](https://docs.aave.com/developers/v/1.0/deployed-contracts/deployed-contract-instances) of Aave.  For this tutorial, V1 contracts from the Kovan testnet.
 
-```
-    function flashloan() public onlyOwner {
+
+> ```
+> function flashloan() public onlyOwner {
         /**
         * Flash Loan of 1000 DAI
         */
