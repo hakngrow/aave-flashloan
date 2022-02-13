@@ -46,13 +46,13 @@ To receive flash loaned amounts, our contract must conform to the `IFlashLoanRec
 
 Next we break down the code in our flash loan contract `FlashLoan.sol`.
 
-`pragma solidity ^0.6.6;`
+> `pragma solidity ^0.6.6;`
 
 
 First, we define the solidity compiler version (`0.6.6`).
 
-`import "./FlashLoanReceiverBase.sol";`
-`import "./ILendingPool.sol";`
+> `import "./FlashLoanReceiverBase.sol";`
+> `import "./ILendingPool.sol";`
 
 Then, we import the dependencies for the smart contract. The flash loan contract is inheriting from the `FlashLoanReceiverBase` abstract contract.
 
@@ -63,9 +63,9 @@ To instaniate the flash loan contract, we need to pass it the address of one of 
 
 > ```
 > function flashloan() public onlyOwner {
-        /**
-        * Flash Loan of 1000 DAI
-        */
+>       /**
+>       * Flash Loan of 1000 DAI
+>        */
         address receiver = address(this); // Can also be a separate contract
         address asset = "0x6b175474e89094c44da98b954eedeac495271d0f"; // Dai
         uint256 amount = 1000 * 1e18;
