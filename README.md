@@ -80,10 +80,14 @@ function flashloan() public onlyOwner {
 }
 ```
 
-We define a `flashloan()` function and in it we define the address of the asset's lending pool (DAI), from which we wish to flash loan.
+We define a `flashloan()` function and in it we set the address of the asset's lending pool (DAI on Kovan), from which we wish to flash loan.
 
 We alo set the amount of DAI we wish to loan in terms of `wei` (10^18).
 
 No data parameters are needed, so we pass in an empty string.
+
+Next, we initialize the lending pool interface (`ILendingPoolV1`) provided by Aave. And we call the `flashLoan` function, using the 4 parameters i.e. address of our contract, address of the asset we wish to loan, the amount to loan, and the data parameter.
+
+
 
 
