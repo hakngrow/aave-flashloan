@@ -152,7 +152,9 @@ Check that the `CONTRACT` section is set to `FlashLoan.sol`. We need to provide 
 
 ![Confirm contract deployment](public/images/deploy-confirm.jpg)
 
+Click on `Confirm`, you should see a success notification from MetaMask. There should now be a `Deployed Contracts` in the side panel.
 
+![Deployed contracts](public/images/deploy-deployed_contracts.jpg)
 
 
 
