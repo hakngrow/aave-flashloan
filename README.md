@@ -148,7 +148,9 @@ Select the `Deploy & Run Transactions` icon on the left navigation bar.  Under t
 
 Check that the `CONTRACT` section is set to `FlashLoan.sol`. We need to provide the address of lending pool in the text field that is next to the `Deploy` button. In our case, it will be `0x506B0B2CF20FAA8f38a4E2B524EE43e1f4458Cc5`. Then click `Deploy`. It should open up MetaMask. 
 
-> A list of all deployed contract addresses can be found [here](https://docs.aave.com/developers/v/1.0/deployed-contracts/deployed-contract-instances). You can find the addresses of various lending pools supported by Aave. The addresses are different for every token, but the procedure remains the same.
+> A list of all deployed contract addresses can be found [here](https://docs.aave.com/developers/v/1.0/deployed-contracts/deployed-contract-instances). You can find the addresses of various lending pools supported by Aave.
+
+![Confirm contract deployment](public/images/deploy-confirm.jpg)
 
 
 
