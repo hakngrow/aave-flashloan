@@ -132,5 +132,11 @@ Click on the links below and, copy and paste the code into the corresponding Sol
   
 ![Dependencies](public/images/deploy-dependencies.jpg)
 
+#### 6.3 Compile the Contract
+
+Select the `Solidity compiler` icon on the left navigation bar.  Set the compiler version to `0.6.6` and click on the `Compile FlashLoan.sol` button.
+
+![Compile the contract](public/images/deploy-compiler.jpg)
+
 
 
