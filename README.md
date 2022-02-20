@@ -110,7 +110,15 @@ Next, we initialize the lending pool interface (`ILendingPoolV1`) provided by Aa
     }
 ```
 
-After receiving the loan, we need to define how to utilize the loan.  This is done in the `executeOperation` function.  This function is called internally after the `flashLoan` function is successfully executed.
+After receiving the loan, we need to define how to utilize the loan.  This is done in the `executeOperation` function.  This function is called internally after the `flashLoan` function is successfully executed.  
+
+The `executeOperation` function takes 4 parameters i.e. the address of the reserve to which we have to pay back the loan, the amount of the asset, the fee that is charged by the Aave protocol, and any additional parameters used internally by the function. 
+
+First, it checks if the loan `_amount` is correct. Then proceeds to execute the code for our use case e.g. arbitrage.  After which, the total debt is calculated and transferred back to the lending pool.
+
+### 6. Deploy the Contract
+
+
 
 
 
