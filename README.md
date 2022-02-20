@@ -136,7 +136,22 @@ Click on the links below and, copy and paste the code into the corresponding Sol
 
 Select the `Solidity compiler` icon on the left navigation bar.  Set the compiler version to `0.6.6` and click on the `Compile FlashLoan.sol` button.
 
+There maybe some warnings but no errors.
+
 ![Compile the contract](public/images/deploy-compiler.jpg)
+
+#### 6.4 Deploy to Kovan Testnet
+
+Select the `Deploy & Run Transactions` icon on the left navigation bar.  Under the `ENVIRONMENT` section, set the `Injected Web3` option.  Metamask should open up asking your permission to connect to Remix.
+
+![Deploy to Kovan Testnet](public/images/deploy-transactions.jpg)
+
+Check that the `CONTRACT` section is set to `FlashLoan.sol`. We need to provide the address of lending pool in the text field that is next to the `Deploy` button. In our case, it will be `0x506B0B2CF20FAA8f38a4E2B524EE43e1f4458Cc5`. Then click `Deploy`. It should open up MetaMask. 
+
+> A list of all deployed contract addresses can be found [here](https://docs.aave.com/developers/v/1.0/deployed-contracts/deployed-contract-instances). You can find the addresses of various lending pools supported by Aave. The addresses are different for every token, but the procedure remains the same.
+
+
+
 
 
 
