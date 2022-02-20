@@ -82,6 +82,8 @@ function flashloan() public onlyOwner {
 
 We define a `flashloan()` function and in it we define the address of the asset's lending pool (DAI), from which we wish to flash loan.
 
+We alo set the amount of DAI we wish to loan in terms of `wei` (10^18).
+
 No data parameters are needed, so we pass in an empty string.
 
 
