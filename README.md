@@ -121,8 +121,14 @@ First, it checks if the loan `_amount` is correct. Then proceeds to execute the 
 #### 6.1 Open MetaMask and select the `Kovan Test Network`.
 ![Select Kovan testnet](public/images/deploy-metamask.jpg)
 
+#### 6.2 Complete Dependency Files
 
-
+Click on the links below and, copy and paste the code into the corresponding Solidity files created earlier.
+- [FlashLoanReceiverBase](contracts/FlashLoanReceiverBase.sol)
+- [IFlashLoanReceiver](contracts/IFlashLoanReceiver.sol)
+- [ILendingPoolAddressesProvider](contracts/ILendingPoolAddressesProvider.sol)
+- [ILendingPool](contracts/ILendingPool.sol)
+- [Withdrawable](contracts/Withdrawable.sol)
 
 
 
