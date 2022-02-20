@@ -88,6 +88,32 @@ No data parameters are needed, so we pass in an empty string.
 
 Next, we initialize the lending pool interface (`ILendingPoolV1`) provided by Aave. And we call the `flashLoan` function, using the 4 parameters i.e. address of our contract, address of the asset we wish to loan, the amount to loan, and the data parameter.
 
+```
+    function executeOperation(
+        address _reserve,
+        uint256 _amount,
+        uint256 _fee,
+        bytes calldata _params
+    )
+        external
+        override
+    {
+        require(_amount <= getBalanceInternal(address(this), _reserve), "Invalid balance, was the flashLoan successful?");
+
+        //
+        // Your logic goes here.
+        // !! Ensure that *this contract* has enough of `_reserve` funds to payback the `_fee` !!
+        //
+
+        uint totalDebt = _amount.add(_fee);
+        transferFundsBackToPoolInternal(_reserve, totalDebt);
+    }
+```
+
+After receiving the loan, we need to define how to utilize the loan.  This is done in the `executeOperation` function.  This function is called internally after the `flashLoan` function is successfully executed.
+
+
+
 
 
 
