@@ -158,13 +158,15 @@ Click on `Confirm`, you should see a success notification from MetaMask. There s
 
 ![Deployed contracts](public/images/deploy-deployed_contracts.jpg)
 
-In the new `Deployed Contracts` section, you will be able to copy the deployed contract's address. 
+In the new `Deployed Contracts` section, you will be able to copy the deployed contract's address. We will need the contract address later; in the meantime, we need to fund our flash loan contract with some DAI. 
 
-We will come back to this step later; in the meantime we need to add some DAI to our Flash Loan contract. 
-
-This is because Flash Loans need funds in the contract to successfully execute. For that, you can jump to this link to get some DAI tokens (be sure to connect to the “Aave v2 Market” with a little “K” in the top right corner). Click on the faucet, paste in your MetaMask wallet address, and wait for confirmation.
+Flash Loans need funds in the contract to successfully execute. To fund our contract, you can click on this [link](https://testnet.aave.com/faucet/DAI) to get some DAI tokens. 
 
 ![Aave V2 market](public/images/fund-aave_market.jpg)
+
+Click on the `MORE` dropdown menu, and click on the `FAUCET` option. paste in your MetaMask wallet address, and wait for confirmation.
+
+
 
 
 
