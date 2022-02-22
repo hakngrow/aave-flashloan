@@ -183,3 +183,9 @@ After successfully minting the DAI from the faucet, we need to add the DAI token
 ![Import DAI token](public/images/metamask-import.jpg)
 
 Open MetaMask, select the `Assets` tab and click on the `Import tokens` link.
+
+![Add DAI token](public/images/metamask-dai.jpg)
+
+In the `Token Contract Address` field enter `0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD`.  This is the contract address for DAI on the Kovan testnet. The token symbol and decimal fields will be auto populated. Click on the `Add Custom Token` button and confirm the import.  You should see an amount of 10,000 DAI in your MetaMask.
+
+
