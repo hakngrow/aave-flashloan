@@ -217,7 +217,9 @@ In the `Tokens Transferred` section, there will be 3 transactions:
 - The second transaction indicates the payback of 1 DAI plus fees back to the lending pool.
 - The third and last transaction show generated DAI interest as a separate utility.
 
+### 9. Conclusion
 
+In this tutorial, we have successfully written, deployed and executed a flash loan smart contract. We borrowed DAI from the Aave lending pool and paid the loan amount plus fee in a single transaction, all done without any collateral.
 
 
 
