@@ -208,7 +208,16 @@ Clicking on the down arrow shows the parameters (`_asset`) required to execute t
 
 ![Remix terminal](public/images/execute-console.jpg)
 
-On clicking the `transact` button, MetaMask opens for your approval of the transaction.  Confrim the transaction and click on the `view on etherscan` link in the Remix terminal.
+On clicking the `transact` button, MetaMask opens for your approval of the transaction.  Confirm the transaction and click on the `view on etherscan` link in the Remix terminal. You will be redirected to a transaction details page on Etherscan for Kovan testnet.
+
+![Transaction details on Etherscan (Kovan)](public/images/execute-etherscan.jpg)
+
+In the `Tokens Transferred` section, there will be 3 transactions:
+- The first transaction show a transfer of 1 DAI from the Aave lending pool to our flash loan contract.
+- The second transaction indicates the payback of 1 DAI plus fees back to the lending pool.
+- The third and last transaction show generated DAI interest as a separate utility.
+
+
 
 
 
