@@ -202,9 +202,15 @@ After receiving the success prompt from MetaMask, click on the notification to b
 
 Going back to Remix, under the `Deployed Contracts` section, all executable functions on the flash loan contract are in orange buttons.  To execute the flash loan, we are interested in the `flashloan` function. 
 
-![](public/images/execute-flashloan.jpg)
+![The flashloan function](public/images/execute-flashloan.jpg)
 
-Clicking on the down arrow shows the parameters (`_asset`) required to execute the function. In our case, it is the Kovan testnet’s DAI contract, which is `0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD`. With that field correctly filled in, you can now hit the “transact” button as shown below.
+Clicking on the down arrow shows the parameters (`_asset`) required to execute the function. In our case, it is the Kovan testnet’s DAI contract address, which is `0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD`. Copy and paste the address in the `_asset` field, and click on the `transact`.
+
+![Remix terminal](public/images/execute-console.jpg)
+
+On clicking the `transact` button, MetaMask opens for your approval of the transaction.  Confrim the transaction and click on the `view on etherscan` link in the Remix terminal.
+
+
 
 
 
