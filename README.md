@@ -190,10 +190,13 @@ In the `Token Contract Address` field enter `0xFf795577d9AC8bD7D90Ee22b6C1703490
 
 ![Send DAI to flash loan contract](public/images/metamask-send.jpg)
 
-Now we can send some DAI to our flash loan contract. Open MetaMask, click on the `Send` icon, copy and paste our flash loan contract address from earlier.  Make sure DAI is selected as the asset, and enter 10 for the amount. Click the `Next` button and confirm the transfer.
+Now we can send some DAI to our flash loan contract. Open MetaMask, click on the `Send` icon, copy and paste our flash loan contract address from [earlier](https://github.com/hakngrow/aave-flashloan#7-funding-the-flash-loan).  Make sure DAI is selected as the asset, and enter 10 for the amount. Click the `Next` button and confirm the transfer.
 
 ![Transaction details on Etherscan](public/images/metamask-etherscan.jpg)
 
-After receiving to success prompt from MetaMask, click on the notification to bring up the transaction details on Etherscan.
+After receiving the success prompt from MetaMask, click on the notification to bring up the transaction details on Etherscan.  Now we can proceed to execute our flash loan contract.
+
+### 8. Execute the Flash Loan
+
 
 
