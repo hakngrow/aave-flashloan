@@ -198,5 +198,13 @@ After receiving the success prompt from MetaMask, click on the notification to b
 
 ### 8. Execute the Flash Loan
 
+![Execute the flashloan function](public/images/execute-remix.jpg)
+
+Going back to Remix, under the `Deployed Contracts` section, all executable functions on the flash loan contract are in orange buttons.  To execute the flash loan, we are interested in the `flashloan` function. 
+
+![](public/images/execute-flashloan.jpg)
+
+Clicking on the down arrow shows the parameters (`_asset`) required to execute the function. In our case, it is the Kovan testnet’s DAI contract, which is `0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD`. With that field correctly filled in, you can now hit the “transact” button as shown below.
+
 
 
