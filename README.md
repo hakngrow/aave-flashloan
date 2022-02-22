@@ -219,7 +219,7 @@ In the `Tokens Transferred` section, there will be 3 transactions:
 
 ### 9. Conclusion
 
-In this tutorial, we have successfully written, deployed and executed a flash loan smart contract. We borrowed DAI from the Aave lending pool and paid the loan amount plus fee in a single transaction, all done without any collateral.
+In this tutorial, we have successfully written, deployed and executed a flash loan smart contract. We borrowed DAI from the Aave lending pool and paid the loan amount plus fees in a single transaction, all done without any collateral.
 
 
 
