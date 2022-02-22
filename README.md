@@ -164,9 +164,22 @@ Flash Loans need funds in the contract to successfully execute. To fund our cont
 
 ![Aave V2 market](public/images/fund-aave_market.jpg)
 
-Click on the `MORE` dropdown menu, and click on the `FAUCET` option. paste in your MetaMask wallet address, and wait for confirmation.
+Click on the `MORE` dropdown menu, and click on the `FAUCET` option. 
 
+![The DAI Faucet](public/images/faucet-dai.jpg)
 
+![Submit the request](public/images/faucet-dai_submit.jpg)
 
+Select the DAI asset and click on the `Faucet` button.
 
+![Confirm the request on MetaMask](public/images/faucet-metamask.jpg)
 
+Confirm the minting transaction on MetaMask.
+
+![Minting of DAI success](public/images/faucet-success.jpg)
+
+After successfully minting the DAI from the faucet, we need to add the DAI token to MetaMask.  
+
+![Import DAI token](public/images/metamask-import.jpg)
+
+Open MetaMask, select the `Assets` tab and click on the `Import tokens` link.
